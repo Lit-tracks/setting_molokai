@@ -1,0 +1,61 @@
+<!doctype html>
+<!--
+
+   _____      _   _   _                  ____  
+  / ____|    | | | | (_)                |___ \ 
+ | (___   ___| |_| |_ _ _ __   __ ___   ____) |
+  \___ \ / _ \ __| __| | '_ \ / _` \ \ / /__ < 
+  ____) |  __/ |_| |_| | | | | (_| |\ V /___) |
+ |_____/ \___|\__|\__|_|_| |_|\__, | \_/|____/ 
+                               __/ |           
+                              |___/            
+
+-->
+<charset=utf-8>
+<title>Setting (Molokai)</title>
+<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="helpme.js"></script>
+<body>
+	<div class="filter_box">
+	</div>
+	<ul class="level_0">
+		<li>
+			<h2 style="border-bottom-color:#B65051">Maui</h2>
+			<ul class="level_1" id="s1">
+				<p style="font-size:20px;">
+				This Hawaiian island is southeast of the island of Oahu, and it where Aunty Haleola is from. This is also the place where Rachel and Sarah live, during a later part in the novel.
+				</p>
+			</ul>
+		</li>
+
+		<li>
+			<h2 style="border-bottom-color:#00AEFF">Molokai</h2>
+			<ul class="level_1" id="s2">
+				<p style="font-size:20px;">
+				The island of Moloka'i; an island in the state of Hawaii used as a "quarantine" zone for many lepers. The village on the east side of the Kalaupapa peninsula has the same name and is where most of the people with leprosy lived, including Rachel.
+				</p>
+			</ul>
+
+		<li>
+			<h2 style="border-bottom-color:#98FB98">Waikiki</h2>
+			<ul class="level_1" id="s3">
+				<p style="font-size:20px;">
+					It is the residence of Rachel and her family when the novel begins in the year 1891. This area is off the coast of Honolulu and is now famous for its beautiful beaches and tourist hotels. In the story, 
+					Rachel and her family live near this area long before the hotels were built.
+				</p>
+			</ul>
+		</li>
+	</ul>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="quicksearch.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').each(function(){
+				$(this).attr('target','_blank');
+			});
+			$('input.filter').quicksearch('.level_1 li');
+			$('input.filter').focus();
+		});
+	</script>
+</body>
